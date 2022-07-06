@@ -6,8 +6,7 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    return x.splitlines()
-# Read data from file
-data = open('txt_file/data01.txt')
-x = data.read()
-print(main(x))
+    ans = []
+    for i in data.split(','):
+        ans.append(int(i))
+    return ans
