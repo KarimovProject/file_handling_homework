@@ -14,6 +14,6 @@ def main(data:str):
         i+=1
     return x
 # Read data from file
-data = open('txt_file/data03.txt')
+data = open('txt_file/data06.txt')
 x = data.read()
 print(main(x))
