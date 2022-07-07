@@ -7,4 +7,14 @@ def main(data:str):
         list: return answer
     """
     
+    x = []
+    i = 0
+    while i <len(data):
+        if data[i].isalpha():
+            x.append(data[i])
+        i+=1
+    return x
 # Read data from file
+data = open('txt_file/data03.txt')
+x = data.read()
+print(main(x))
